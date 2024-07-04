@@ -7,7 +7,7 @@ It's not a full repo, and you'll probably have to rework them to make them work,
 - iRSDK (https://github.com/NickThissen/iRacingSdkWrapper) [You may need to modify it to remove some C# that doesn't work with mono. I think I have a version of it somewhere if you need it.)
 - YamlDotNet (requirement of iRSDK)
 - Hessburg - Sunlight (https://assetstore.unity.com/packages/tools/particles-effects/sunlight-location-based-time-of-day-66399?clickref=1101lyIek3Vf&utm_source=partnerize&utm_medium=affiliate&utm_campaign=unity_affiliate) | Needed to control the lighting system for day/night cycles
-- NodaTime (Needed to convert date-time values for iRacing to properly usable date time systems)
+- NodaTime (Needed to convert date-time values for iRacing to properly usable date time systems) [Actually NOT entirely sure I use this, i think I use it for some of the scripting bits that the normal time stuff I just couldn't get to work cause I'm dumb)
 - TzLookup (Needed for database of timezones to convert UTC offset correctly based on iRacing's provided track coordinates)
 - Rewired (Controller Input)
 
