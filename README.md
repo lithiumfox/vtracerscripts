@@ -12,9 +12,9 @@ It's not a full repo, and you'll probably have to rework them to make them work,
 - Rewired (Controller Input)
 
 Now, these scripts mostly serves as a "proof of concept" to show how one could setup a VR Room Scale environment to correctly adjust based on in-game and real world systems. It's not fully fleshed out, in that it does not have:
-- Saving the location of the sim rig
-- Manual adjustment of any 3D objects
-- Any system to modify or attempt to modify the sim rig or shaders of any compontent shown
+- Cannot save the location of the sim rig
+- Cannot provide Manual adjustment of any 3D objects
+- Cannot handle any system to modify or attempt to modify the sim rig or shaders of any compontent shown
 
 It's simply a script to control both the sim rig, the world lighting, and other such variables SOLELY around the in-game systems. But, I could never get myself to sit down and find out what I could include in the source code or not, because I'm NOT a programmer. I'm just a person who got hyper focused for like a year and then was "content" with what I built for myself. I'm sorry. I wanted to do so much more. But I don't even know... I just think I'll leave it at that.
 
