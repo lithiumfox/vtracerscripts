@@ -21,3 +21,5 @@ It's simply a script to control both the sim rig, the world lighting, and other 
 I hope this at least can inspire you to do something better than me. If anything, the big thing I'd focus on is the conversion of the data itself. Most of the data is relatively easy to get. inputs are just inputs, iRacing telemetry provides most example data and can be either cached or pulled from again just to do an update (for example, trying not to update the lighting constantly is important when you're dealing with 8x speed in iRacing)
 
 Regardless, I hope this is useful to someone.
+
+I included the modified rig I used for this exmaple as well. It's jank, but if anything, hopefully the "concept" of it makes sense. I wanted to control it via bones so that someone could easily make a custom sim rig and just "plop" it in.
