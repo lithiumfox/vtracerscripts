@@ -31,3 +31,12 @@ Explanation of files:
 - iRacingSDKLoader.cs - (Just a basic loader CS)
 - iRacingConnector.cs - Direct Integration with iRacing : Gathers Location, generates date time, and pulls car telemetry updates for North direction in iRacing, and converts it to Unity space, and then offsets all of that based on the current rotation of the sim rig (allowing for correct placement of lighting regardless of calibration changes !IMPORTANT)
 - vtracerController.cs - Just rewired detection scripts and finds the rotation of the sim rig so that iRacingConnector can properly assess it's current position. Also adds shifter stuff. First script I ever did, lol. (Also calibrates the sim rig to the head position + right hand/Wheel position. NOTE: rightHand = GameObject.Find("Hand_R"); (Bone must be named Hand_R for it to function. This can be improved, I just suck!)
+
+
+Some random quirks I can remember off the top of my head.
+
+iRacing uses Radians. Sunlight uses Degrees. Conversion is needed.
+Pretty sure iRacing and Unity are like flipped. I did a bunch of different methods, whatever math I did got it sorted out.
+Do not move the avatar, move the sun. Problem with moving the avatar is PhysBones/SpringBones/DynamicBones. I mean you could... but.. probably a better method would be preferred.
+
+Anyway, thank you for... idk, reading? I wish I did more with this. I just... don't think I'll ever be able to.
