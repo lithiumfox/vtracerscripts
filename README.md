@@ -23,3 +23,11 @@ I hope this at least can inspire you to do something better than me. If anything
 Regardless, I hope this is useful to someone.
 
 I included the modified rig I used for this exmaple as well. It's jank, but if anything, hopefully the "concept" of it makes sense. I wanted to control it via bones so that someone could easily make a custom sim rig and just "plop" it in.
+
+Explanation of files:
+
+- "Rig" folder - Materials and textures for Unity
+- RigUpdate.fbx - the 3D model of the sim rig
+- iRacingSDKLoader.cs - (Just a basic loader CS)
+- iRacingConnector.cs - Direct Integration with iRacing : Gathers Location, generates date time, and pulls car telemetry updates for North direction in iRacing, and converts it to Unity space, and then offsets all of that based on the current rotation of the sim rig (allowing for correct placement of lighting regardless of calibration changes !IMPORTANT)
+- vtracerController.cs - Just rewired detection scripts and finds the rotation of the sim rig so that iRacingConnector can properly assess it's current position. Also adds shifter stuff. First script I ever did, lol. (Also calibrates the sim rig to the head position + right hand/Wheel position. NOTE: rightHand = GameObject.Find("Hand_R"); (Bone must be named Hand_R for it to function. This can be improved, I just suck!)
